@@ -157,7 +157,7 @@ margin: auto;
   display:flex;
   flex-direction: column;
 }
-@media all and (max-width: 959px) {
+@media only screen  and (max-device-width: 1200px) and (orientation: landscape) {
   body{
     width: 90%;
   }
@@ -165,8 +165,5 @@ margin: auto;
     display: inline;
     flex-direction: column;
   }
-  .box{
-    width: 90%;
-   
-  }
+
 }
