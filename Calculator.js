@@ -37,16 +37,16 @@ function squareMeters() {
   const lenghtInput = document.getElementById("sqLenght").value;
   const widthInput = document.getElementById("sqWidth").value;
   const resultOutputElement = document.getElementById("square-meter-result");
-  const resultParagraph = document.createElement("p");
+  // const resultParagraph = document.createElement("p");
   const errorLog = "Positive numbers only";
   const result = () => lenghtInput * widthInput;
-  resultParagraph.innerText = result();
+  resultOutputElement.innerText = result();
 
   while (resultOutputElement.firstChild) {
     resultOutputElement.removeChild(resultOutputElement.lastChild);
   }
   if (lenghtInput >= 0 && widthInput >= 0) {
-    resultOutputElement.appendChild(resultParagraph);
+    resultOutputElement.innerText = `${result()} m2`;
   } else {
     resultOutputElement.append(errorLog);
   }
@@ -56,16 +56,16 @@ function wageCalculation() {
   const hoursInput = document.getElementById("hours").value;
   const pricePerHour = 350;
   const wageOutputElement = document.getElementById("hours-worked");
-  const wageParagaraph = document.createElement("p");
+  // const wageParagaraph = document.createElement("p");
   const errorLog = "Positive numbers only";
   const wage = () => hoursInput * pricePerHour;
-  wageParagaraph.innerText = wage();
+  wageOutputElement.innerText = wage();
 
   while (wageOutputElement.firstChild) {
     wageOutputElement.removeChild(wageOutputElement.lastChild);
   }
   if (hoursInput >= 0) {
-    wageOutputElement.appendChild(wageParagaraph);
+    wageOutputElement.innerText = `${wage()} dkk`;
   } else {
     wageOutputElement.append(errorLog);
   }
