@@ -157,33 +157,16 @@ margin: auto;
   display:flex;
   flex-direction: column;
 }
-.tonsCalculation{
-   display: flex;
-  flex-direction: column;
-max-width: 20%;
-
-   /* ivka slaga neshta tuk */
-
-  background-color: #320000;
-  /* Div-a ti trqbva da e po maluk ot 100 procenta i da e centriran s margin */
-  /* max-width: 80%; */
-margin: auto;
-
-  text-align: left;
-  /* text-align: left; */
-  font-size: 20px;
-
-
-  /* smenih fonta i cveta navsqkude */
-  font-family: Arial, Helvetica, sans-serif;
-  color: #DFDFDF;
-
-  /* Dadoh razstoqnie, za da ne trqbva teksta i vsichko da e zalepeno za stenite na divovete */
-  padding: 2%;
-  margin-top: 20px;
-  margin-bottom: 20px;
-
-  /* stilizirah divovete da izglejdat fancy */
-  border-radius: 5px;
-  box-shadow: 2px 2px 4px #1b1b1b;
+@media all and (max-width: 959px) {
+  body{
+    width: 90%;
+  }
+  .boxWrapper{
+    display: inline;
+    flex-direction: column;
+  }
+  .box{
+    width: 90%;
+   
+  }
 }
