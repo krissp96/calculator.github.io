@@ -157,7 +157,7 @@ margin: auto;
   display:flex;
   flex-direction: column;
 }
-@media only screen  and (max-device-width: 1200px) and (orientation: landscape) {
+@media only screen  and (max-device-width: 900px) {
   body{
     width: 90%;
   }
