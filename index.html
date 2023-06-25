@@ -17,6 +17,39 @@
         <div class="boxWrapper">
             <div class="box">
                 <div class="headWrapper">
+                    <h2>Cubic Meters</h2>
+                </div>
+                <!-- <p>Cubic Meters</p> -->
+                <div class="formWrapper">
+                    <form class="formClass">
+                        <label for="heightC">Height:</label><br>
+                        <input type="number" id="cubicMHeight" name="heightC" placeholder="Enter the height"><br><br>
+                        <label for="lenghtC">Lenght:</label><br>
+                        <input type="number" id="cubicMLenght" name="lenghtC" placeholder="Enter the lenght"><br><br>
+                        <label for="widthC">Width:</label><br>
+                        <input type="number" id="cubicMWidth" name="widthC" placeholder="Enter the width"><br><br>
+                        <div class="buttonWrapper"> <input id="submitCubicMeters" type="button" onclick="cubicMeters()"
+                                value="Calculate"> </div>
+                        <br>
+                        <div class="Result">
+                            <p id="cubic-meter-resut">Your result</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="box">
+                <h4>Sand in tons:</h4>
+                <p id="sand-in-tons"></p>
+                <h4>Gravel in tons</h4>
+                <p id="gravel-in-tons"></p>
+                <h4>Stones in tons:</h4>
+                <p id="stone-in-tons"></p>
+                <h4>Earth in tons:</h4>
+                <p id="earth-in-tons"></p>
+            </div>
+            <div class="box">
+                <div class="headWrapper">
                     <h2>Square Meters</h2>
                 </div>
                 <!-- napravih ti zaglaviqta da sa h2, zashtoto imash i drugi P i nastroikite shte sa ednaklvi s celiq tekst -->
@@ -41,29 +74,6 @@
 
 
 
-            <div class="box">
-                <div class="headWrapper">
-                    <h2>Cubic Meters</h2>
-                </div>
-                <!-- <p>Cubic Meters</p> -->
-                <div class="formWrapper">
-                    <form class="formClass">
-                        <label for="heightC">Height:</label><br>
-                        <input type="number" id="cubicMHeight" name="heightC" placeholder="Enter the height"><br><br>
-                        <label for="lenghtC">Lenght:</label><br>
-                        <input type="number" id="cubicMLenght" name="lenghtC" placeholder="Enter the lenght"><br><br>
-                        <label for="widthC">Width:</label><br>
-                        <input type="number" id="cubicMWidth" name="widthC" placeholder="Enter the width"><br><br>
-                        <div class="buttonWrapper"> <input id="submitCubicMeters" type="button" onclick="cubicMeters()"
-                                value="Calculate"> </div>
-                        <br>
-                        <div class="Result">
-                            <p id="cubic-meter-resut">Your result</p>
-                        </div>
-                    </form>
-                </div>
-            </div>
-
 
             <div class="box">
                 <div class="headWrapper">
@@ -86,16 +96,6 @@
             </div>
         </div>
 
-        <div class="tonsCalculation">
-            <h4>Sand in tons:</h4>
-            <p id="sand-in-tons"></p>
-            <h4>Gravel in tons</h4>
-            <p id="gravel-in-tons"></p>
-            <h4>Stones in tons:</h4>
-            <p id="stone-in-tons"></p>
-            <h4>Earth in tons:</h4>
-            <p id="earth-in-tons"></p>
-        </div>
 
 
     </div>
