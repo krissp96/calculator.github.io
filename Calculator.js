@@ -18,7 +18,7 @@ function cubicMeters() {
   while (resultOutputElement.firstChild) {
     resultOutputElement.removeChild(resultOutputElement.lastChild);
   }
-  if (lenghtCMInput >= 1 && widthCMInput >= 1 && heightCMInput >= 1) {
+  if (lenghtCMInput >= 0 && widthCMInput >= 0 && heightCMInput >= 0) {
     resultOutputElement.innerText = `${result()} m3`;
     resultSandOutputElement.innerText = (result() * 1.57).toFixed(2);
     resultGravelOutputElement.innerText = (result() * 1.62).toFixed(2);
